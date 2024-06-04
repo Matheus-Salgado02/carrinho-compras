@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="texto-velho">Texto para ser modificado</h1>
+    <button onclick="adicionar()" type="button" class="botao-form botao-adicionar">Modificar texto</button>
+    
+
+    <script>
+
+        function adicionar()
+        {
+            let textoNovo=prompt("Informe um texto novo")
+            document.getElementById('texto-velho').textContent = textoNovo;
+        }
+
+    </script>
+</body>
+</html>

@@ -42,3 +42,6 @@ function limpar()
     document.getElementById('lista-produtos').innerHTML='Adicione produtos';
     document.getElementById('valor-total').innerHTML='R$ 0';
 }
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="quantidade-input" id="1" type="number" placeholder="100"> <br>
+    <input class="quantidade-input" id="2" type="number" placeholder="100"><br>
+    <input class="quantidade-input" id="3" type="number" placeholder="100"><br><br>
+    <button onclick="adicionar()" type="button" class="botao-form botao-adicionar">Adicionar</button>
+    <p id="valor-1">valor 1</p>
+    <p id="valor-2">valor 2</p>
+    <p id="valor-3">valor 3</p>
+
+
+    <script>
+        function adicionar()
+        {
+            let valor1=document.getElementById('1').value;
+            console.log(valor1);
+            let valor2=document.getElementById('2').value;
+            console.log(valor2);
+            let valor3=document.getElementById('3').value;
+            console.log(valor3);
+
+            document.getElementById('valor-1').innerHTML=valor1;
+            document.getElementById('valor-2').innerHTML=valor2;
+            document.getElementById('valor-3').innerHTML=valor3;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="texto">Ei, você, tenha um ótimo dia!, 3,4,5,6</h1>
+    <button onclick="funcao()">Clique-aqui!</button>
+    <h2 id="parte-1"></h2>
+    <h2 id="parte-2"></h2>
+    <h2 id="parte-3"></h2>
+    <h2 id="parte-4"></h2>
+    <h2 id="parte-5"></h2>
+    <h2 id="parte-6"></h2>
+    <h2 id="parte-7"></h2>
+
+
+    <script>
+    function funcao()
+    {
+    const textoString=document.getElementById('texto');
+    let texto=textoString.textContent;
+
+    let parte1=texto.split(',')[0];
+    let parte2=texto.split(',')[1];
+    let parte3=texto.split(',')[2];
+    let parte4=texto.split(',')[3];
+    let parte5=texto.split(',')[4];
+    let parte6=texto.split(',')[5];
+    let parte7=texto.split(',')[6];
+    
+
+    document.getElementById('parte-1').textContent=parte1;
+    document.getElementById('parte-2').textContent=parte2;
+    document.getElementById('parte-3').textContent=parte3;
+    document.getElementById('parte-4').textContent=parte4;
+    document.getElementById('parte-5').textContent=parte5;
+    document.getElementById('parte-6').textContent=parte6;
+    document.getElementById('parte-7').textContent=parte7;
+
+    }
+
+    
+    </script>
+</body>
+</html>
